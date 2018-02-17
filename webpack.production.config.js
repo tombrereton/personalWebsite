@@ -4,6 +4,7 @@ var loaders = require('./webpack.loaders');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 var WebpackCleanupPlugin = require('webpack-cleanup-plugin');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin')
 
 loaders.push({
   test: /\.scss$/,
@@ -28,6 +29,10 @@ module.exports = {
     loaders
   },
   plugins: [
+    new CopyWebpackPlugin([
+      {from: '_redirects'},
+      {from: 'src/favicon.ico'}
+    ]),
     new WebpackCleanupPlugin(),
     new webpack.DefinePlugin({
       'process.env': {
