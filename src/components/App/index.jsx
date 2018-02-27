@@ -5,8 +5,9 @@ import {
   Route
 } from 'react-router-dom';
 import Home from '../Home';
-import About from '../About';
-import Sample from '../Sample';
+import Projects from '../Projects';
+import Blog from '../Blog';
+import Contact from '../Contact';
 import './styles.css';
 
 class App extends React.Component {
@@ -36,8 +37,9 @@ class App extends React.Component {
             loading={this.state.loading} 
             />
           <Route exact path="/" component={Home} />
-          <Route path="/about" component={About} />
-          <Route path="/sample" component={Sample} />
+          <Route path="/projects" component={Projects} />
+          <Route path="/blog" component={Blog} />
+          <Route path="/contact" component={Contact} />
         </div>
       </Router>
     );
