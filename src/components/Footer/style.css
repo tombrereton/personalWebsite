@@ -1,14 +1,14 @@
 .footerContainer {
   display: flex;
+  position: fixed;
+  bottom: 0;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
   height: 3.5em;
   width: 100%;
-  border-style: solid;
-  border-width: .1px;
-  border-color: black;
-  background-color: #FBFFFE;
+  background-color: rgb(240, 240, 240);
+  box-shadow: 0 0 15px #00214B;
 }
 
 .companyName {
