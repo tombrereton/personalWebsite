@@ -1,0 +1,21 @@
+.footerContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 3.5em;
+  width: 100%;
+  border-style: solid;
+  border-width: .1px;
+  border-color: black;
+  background-color: #FBFFFE;
+}
+
+.companyName {
+  margin-left: 1em;
+  color: #373737;
+}
+
+.copyWright {
+  font-style: none;
+}

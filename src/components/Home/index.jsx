@@ -1,13 +1,16 @@
 import React from 'react';
-import 'normalize.css';
-import './style.scss';
+import Carousel from '../Carousel';
+import './style.css';
 
 const Home = () => (
-  <div className='App'>
-    <div>
-      <h1>It Works!</h1>
-      <p>This React project just works including <span className="redBg">module</span> local styles.</p>
-      <p>Enjoy!</p>
+  <div className='homeContainer'>
+    <div className='homeImageContainer'>
+      <Carousel />
+    </div>
+    <div className='homeTextOnImage'>
+      <p>Logo</p>
+      <p>Company</p>
+      <p>Name</p>
     </div>
   </div>
 );

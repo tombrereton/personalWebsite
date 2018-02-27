@@ -1,0 +1,27 @@
+.homeContainer {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: center;
+  background-color: #373737;
+}
+
+.homeImageContainer {
+  display: block;
+  width: 100%;
+}
+
+.homeImageContainer > img {
+  display: block;
+  width: 100%;
+}
+
+.homeTextOnImage {
+    position: absolute;  
+    left: 50%;                        /* horizontal alignment */
+    top: 50%;                         /* vertical alignment */
+    transform: translate(-50%, -50%); /* precise centering; see link below */
+    color: #FBFFFE;
+    text-align: center;
+    font-size: 3em;
+}
