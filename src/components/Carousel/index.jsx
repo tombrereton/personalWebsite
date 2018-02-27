@@ -13,6 +13,7 @@ const Carousel = () => (
     dynamicHeight={true}
     transitionTime={800}
     stopOnHover={false}
+    swipeable={false}
     autoPlay>
     <img src="https://picsum.photos/520/649" />
     <img src="https://picsum.photos/520/650" />

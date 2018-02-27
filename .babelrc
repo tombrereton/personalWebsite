@@ -4,6 +4,7 @@
     "transform-runtime",
     "transform-decorators-legacy",
     "transform-class-properties",
+    "emotion",
     ["module-resolver", {
       "root": ["./src"],
       "alias": {
