@@ -7,8 +7,6 @@ import {
 import Home from '../Home';
 import About from '../About';
 import Sample from '../Sample';
-import Header from '../Header';
-import Footer from '../Footer';
 import './styles.css';
 
 class App extends React.Component {
@@ -33,15 +31,13 @@ class App extends React.Component {
     return (
       <Router>
         <div className="outerContainer">
-          <Header />
           < RingLoader
             color={'#123abc'}
-            loading={this.state.loading}
-          />
+            loading={this.state.loading} 
+            />
           <Route exact path="/" component={Home} />
           <Route path="/about" component={About} />
           <Route path="/sample" component={Sample} />
-          <Footer />
         </div>
       </Router>
     );
