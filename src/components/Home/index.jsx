@@ -1,5 +1,5 @@
 import React from 'react';
-import './style.css';
+import './style.scss';
 import Layout from '../Layout';
 import app from '../Flamelink';
 import ReactMarkdown from 'react-markdown';
