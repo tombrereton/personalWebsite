@@ -2,6 +2,7 @@ $darkestColour: #0D0C1D;
 $darkColour: #202C39;
 $lightColour:#DCDCDD;
 $accentColour: #E9DB9E;
+$bounceHeight: -10px;
 
 h2 {
   padding: 1em;
@@ -44,8 +45,6 @@ h3 {
 }
 
 .section2 {
-  /* color: #DECBB7; */
-  // color: $lightColour;
   color: $accentColour;
   background: $darkColour;
   padding: 1em;
@@ -62,4 +61,66 @@ h3 {
   color: $darkColour;
   padding-left: 2em;
   padding-bottom: 2em;
+}
+
+.downArrow {
+  color: $lightColour;
+  opacity: 0.5;
+	position: fixed;
+	bottom: 7%;
+	left: 45%;
+}
+
+.bounce {
+	-moz-animation: bounce 3s infinite;
+	-webkit-animation: bounce 3s infinite;
+	animation: bounce 3s infinite;
+}
+@-moz-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -moz-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -moz-transform: translateY($bounceHeight);
+    transform: translateY($bounceHeight);
+  }
+  60% {
+    -moz-transform: translateY($bounceHeight/2);
+    transform: translateY($bounceHeight/2);
+  }
+}
+@-webkit-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY($bounceHeight);
+    transform: translateY($bounceHeight);
+  }
+  60% {
+    -webkit-transform: translateY($bounceHeight/2);
+    transform: translateY($bounceHeight/2);
+  }
+}
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -moz-transform: translateY($bounceHeight);
+    -ms-transform: translateY($bounceHeight);
+    -webkit-transform: translateY($bounceHeight);
+    transform: translateY($bounceHeight);
+  }
+  60% {
+    -moz-transform: translateY($bounceHeight/2);
+    -ms-transform: translateY($bounceHeight/2);
+    -webkit-transform: translateY($bounceHeight/2);
+    transform: translateY($bounceHeight/2);
+  }
 }
