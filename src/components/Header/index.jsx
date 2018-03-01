@@ -1,11 +1,11 @@
 import React from "react";
-import Logo from '../Logo';
 import './style.css'
 
 const Header = () => (
   <div className="headerContainer">
-    <Logo />
+    <span className="leftHeader">Tom Lewis</span>
+    <span className="rightHeader">Tech</span>
   </div>
-  )
-  
-  export default Header;
+)
+
+export default Header;

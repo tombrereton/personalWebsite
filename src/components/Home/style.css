@@ -7,10 +7,12 @@ h3 {
 }
 
 .homeContainer {
+  background: #EFF9F0;
   display: flex;
   flex-direction: column;
   flex-grow: 1;
   justify-content: center;
+  align-items: center;
 }
 
 .homeImageContainer {
@@ -24,15 +26,14 @@ h3 {
 }
 
 .homeText{
-    color: rgb(36, 36, 36);
-    text-align: center;
+  color: rgb(36, 36, 36);
+  text-align: center;
 }
 
 .section1 {
   background: #EFF9F0;
   color: #0D0C1D;
   padding: 1em;
-  /* text-decoration-line: underline; */
 }
 
 .section2 {
@@ -45,6 +46,5 @@ h3 {
   text-align: left;
   background: #EFF9F0;
   color: #0D0C1D;
-  padding: 1em;
-  padding-left: 2em;
+  padding: 2em;
 }

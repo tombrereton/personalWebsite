@@ -3,7 +3,7 @@ import './style.scss';
 
 const Logo = () => (
 	<div className="logo">
-		<img src="http://via.placeholder.com/200x50" />
+		Tom Lewis
 	</div>
 );
 
