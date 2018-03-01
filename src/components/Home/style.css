@@ -42,7 +42,9 @@ h3 {
 }
 
 .section3 {
+  text-align: left;
   background: #EFF9F0;
   color: #0D0C1D;
   padding: 1em;
+  padding-left: 2em;
 }

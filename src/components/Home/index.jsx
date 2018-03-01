@@ -2,6 +2,7 @@ import React from 'react';
 import './style.css';
 import Layout from '../Layout';
 import app from '../Flamelink';
+import ReactMarkdown from 'react-markdown';
 
 
 
@@ -23,7 +24,6 @@ class Home extends React.Component {
   render() {
 
     if (this.state.homeContent !== undefined) {
-      console.log('home content: ', this.state.homeContent)
       return (
         <Layout>
           <div className='homeContainer'>
@@ -38,15 +38,15 @@ class Home extends React.Component {
               </div>
               <div className='section2'>
                 <h3>{this.state.homeContent.topicQuestion1}</h3>
-                <p>{this.state.homeContent.topicAnswer1}</p>
+                <ReactMarkdown source={this.state.homeContent.topicAnswer1} />
                 <h3>{this.state.homeContent.topicQuestion2}</h3>
-                <p>{this.state.homeContent.topicAnswer2}</p>
+                <ReactMarkdown source={this.state.homeContent.topicAnswer2} />
                 <h3>{this.state.homeContent.topicQuestion3}</h3>
-                <p>{this.state.homeContent.topicAnswer3}</p>
+                <ReactMarkdown source={this.state.homeContent.topicAnswer3} />
               </div>
               <div className='section3'>
                 <h3>{this.state.homeContent.topicQuestion4}</h3>
-                <p>{this.state.homeContent.topicAnswer4}</p>
+                <ReactMarkdown source={this.state.homeContent.topicAnswer4} />
               </div>
             </div>
           </div>
