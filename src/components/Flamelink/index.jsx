@@ -1,8 +1,6 @@
 import * as firebase from 'firebase';
 import flamelink from 'flamelink';
 
-console.log('Database url: ', process.env.FIREBASE_DATABASE)
-
 const config = {
     apiKey: process.env.FIREBASE_KEY,
     authDomain: process.env.FIREBASE_DOMAIN,
@@ -14,6 +12,5 @@ const config = {
 
 const firebaseApp = firebase.initializeApp(config);
 const app = flamelink({ firebaseApp });
-
 
 export default app;
