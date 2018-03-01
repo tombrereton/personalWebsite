@@ -18,6 +18,8 @@
   "license": "MIT",
   "homepage": "https://github.com/ReactJSResources/react-webpack-babel#readme",
   "dependencies": {
+    "dotenv-webpack": "^1.5.5",
+    "flamelink": "^0.14.1",
     "node-sass": "^4.7.2",
     "normalize.css": "^7.0.0",
     "react": "^16.2.0",

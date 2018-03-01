@@ -5,6 +5,7 @@ var loaders = require('./webpack.loaders');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 var DashboardPlugin = require('webpack-dashboard/plugin');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
+const Dotenv = require('dotenv-webpack');
 
 const HOST = process.env.HOST || "127.0.0.1";
 const PORT = process.env.PORT || "8888";
@@ -15,7 +16,11 @@ loaders.push({
   exclude: ['node_modules']
 });
 
+
 module.exports = {
+  node: {
+    fs: 'empty'
+  },
   entry: [
     'react-hot-loader/patch',
     './src/index.jsx', // your app's entry point
@@ -46,6 +51,7 @@ module.exports = {
     host: HOST
   },
   plugins: [
+    new Dotenv(),
     new webpack.NoEmitOnErrorsPlugin(),
     new webpack.NamedModulesPlugin(),
     new webpack.HotModuleReplacementPlugin(),
@@ -58,7 +64,7 @@ module.exports = {
       template: './src/template.html',
       files: {
         css: ['style.css'],
-        js: [ "bundle.js"],
+        js: ["bundle.js"],
       }
     }),
   ]

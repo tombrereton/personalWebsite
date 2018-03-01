@@ -8,6 +8,7 @@ import Home from '../Home';
 import Projects from '../Projects';
 import Blog from '../Blog';
 import Contact from '../Contact';
+import PostFull from '../PostFull'
 import './styles.css';
 
 class App extends React.Component {
@@ -34,12 +35,13 @@ class App extends React.Component {
         <div className="outerContainer">
           < RingLoader
             color={'#123abc'}
-            loading={this.state.loading} 
-            />
+            loading={this.state.loading}
+          />
           <Route exact path="/" component={Home} />
           <Route path="/projects" component={Projects} />
           <Route path="/blog" component={Blog} />
           <Route path="/contact" component={Contact} />
+          <Route path="/post/:id" component={PostFull} />
         </div>
       </Router>
     );
