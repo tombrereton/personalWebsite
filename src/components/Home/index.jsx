@@ -53,7 +53,7 @@ class Home extends React.Component {
               <ReactMarkdown source={this.state.homeContent.topicAnswer3} />
             </div>
             <div className='section3'>
-              <h3>{this.state.homeContent.topicQuestion4}</h3>
+              <h3 className='section3Header'>{this.state.homeContent.topicQuestion4}</h3>
               <ReactMarkdown source={this.state.homeContent.topicAnswer4} />
             </div>
           </div>

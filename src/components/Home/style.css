@@ -3,7 +3,8 @@ h2 {
 }
 
 h3 {
-  padding: 1em;
+  padding-top: 3em;
+  padding-bottom: 0.5em;
 }
 
 .homeContainer {
@@ -42,9 +43,15 @@ h3 {
   padding: 1em;
 }
 
+.section3Header {
+  text-align: center;
+  padding-right: 2em;
+}
+
 .section3 {
   text-align: left;
   background: #EFF9F0;
   color: #0D0C1D;
-  padding: 2em;
+  padding-left: 2em;
+  padding-bottom: 2em;
 }
