@@ -55,20 +55,20 @@ class Home extends React.Component {
           </div>
           <div className='homeText'>
             <div className='section1'>
-              <h2>{this.state.homeContent.authorName}</h2>
-              <h2>{this.state.homeContent.authorRole1}</h2>
-              <h2>{this.state.homeContent.authorRole2}</h2>
+              <h1>{this.state.homeContent.authorName}</h1>
+              <h1>{this.state.homeContent.authorRole1}</h1>
+              <h1>{this.state.homeContent.authorRole2}</h1>
             </div>
             <div className='section2'>
-              <h3>{this.state.homeContent.topicQuestion1}</h3>
+              <h2>{this.state.homeContent.topicQuestion1}</h2>
               <ReactMarkdown source={this.state.homeContent.topicAnswer1} />
-              <h3>{this.state.homeContent.topicQuestion2}</h3>
+              <h2>{this.state.homeContent.topicQuestion2}</h2>
               <ReactMarkdown source={this.state.homeContent.topicAnswer2} />
-              <h3>{this.state.homeContent.topicQuestion3}</h3>
+              <h2>{this.state.homeContent.topicQuestion3}</h2>
               <ReactMarkdown source={this.state.homeContent.topicAnswer3} />
             </div>
             <div className='section3'>
-              <h3 className='section3Header'>{this.state.homeContent.topicQuestion4}</h3>
+              <h2 className='section3Header'>{this.state.homeContent.topicQuestion4}</h2>
               <ReactMarkdown source={this.state.homeContent.topicAnswer4} />
             </div>
           </div>

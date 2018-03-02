@@ -40,7 +40,8 @@ module.exports = {
 		new Dotenv(),
 		new CopyWebpackPlugin([
 			{ from: '_redirects' },
-			{ from: 'src/favicon.ico' }
+			{ from: 'src/favicon.ico' },
+			{ from: 'robots.txt' }
 		]),
 		new WebpackCleanupPlugin(),
 		new webpack.DefinePlugin({
