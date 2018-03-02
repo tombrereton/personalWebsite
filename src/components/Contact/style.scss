@@ -1,0 +1,72 @@
+$darkestColour: #0D0C1D;
+$darkColour: #202C39;
+$lightColour:#DCDCDD;
+$altLightColour: #E9DB9E;
+$accentColour: #C05746;
+
+.contactContainer  {
+  background: $darkColour;
+  color: $altLightColour;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.contactContainer p {
+  display: flex;
+  padding: 1em;
+}
+
+.contactContainer > form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 1em;
+}
+
+input,
+textarea,
+button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  padding: 1em;
+  border: 0;
+}
+
+input,
+textarea {
+  background: $lightColour;
+  color: $darkColour;
+}
+
+textarea {
+  height: 15vh;
+}
+
+button {
+  width: 87%;
+  margin-top: 2em;
+  border: none;
+  color: $darkColour;
+  background: $accentColour;
+  text-decoration: none;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 1.2em;
+}
+
