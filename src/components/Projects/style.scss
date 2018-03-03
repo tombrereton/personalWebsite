@@ -1,0 +1,14 @@
+$darkestColour: #0D0C1D;
+$darkColour: #202C39;
+$lightColour:#DCDCDD;
+$accentColour: #E9DB9E;
+
+
+.projectsContainer {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: center;
+  text-align: center;
+  background: $lightColour;
+}

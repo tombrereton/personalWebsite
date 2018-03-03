@@ -1,0 +1,52 @@
+$darkestColour: #0D0C1D;
+$darkColour: #202C39;
+$lightColour:#DCDCDD;
+$accentColour: #E9DB9E;
+
+hr {
+    margin: 1em;
+    color: #cacaca
+}
+
+.projectSummary {
+    display: flex;
+    flex-direction: column;
+    background: $darkColour;
+}
+
+.projectSummary * {
+  color: $lightColour;
+}
+
+.firstRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.summaryImage {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1em;
+  width: 30%;
+}
+
+.summaryImage > img {
+    width: 100%;
+}
+
+.summaryTitleLink {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.secondRow {
+    padding: 1em;
+}
+
+.projectsSeparator {
+  height: 1em;
+  background-color: $lightColour;
+}

@@ -1,6 +1,6 @@
 import React from 'react';
 import Layout from '../Layout';
-import './style.css';
+import './style.scss';
 import app from '../Flamelink';
 import ProjectSummary from '../ProjectSummary';
 
@@ -25,21 +25,20 @@ class Blog extends React.Component {
   }
 
   render() {
-    let projects = this.state.projects.map((project) => {
+    let projects = this.state.projects.map((project, index) => {
       return (
-        <div>
-          <ProjectSummary
-            title={project.title}
-            projectLink={project.projectLink}
-            summary={project.summary}
-            image0={project.image0} 
-            id={project.id} />
-        </div>
+        <ProjectSummary
+          key={index}
+          title={project.title}
+          projectLink={project.projectLink}
+          summary={project.summary}
+          image0={project.image0}
+          id={project.id} />
       )
     });
     return (
       <Layout>
-        <div className='blogContainer'>
+        <div className='projectsContainer'>
           {projects}
         </div>
       </Layout >
