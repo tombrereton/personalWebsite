@@ -8,7 +8,8 @@ import Home from '../Home';
 import Projects from '../Projects';
 import Blog from '../Blog';
 import Contact from '../Contact';
-import PostFull from '../PostFull'
+import PostFull from '../PostFull';
+import Project from '../Project';
 import './styles.css';
 
 class App extends React.Component {
@@ -42,6 +43,7 @@ class App extends React.Component {
           <Route path="/blog" component={Blog} />
           <Route path="/contact" component={Contact} />
           <Route path="/post/:id" component={PostFull} />
+          <Route path="/project/:id" component={Project} />
         </div>
       </Router>
     );
