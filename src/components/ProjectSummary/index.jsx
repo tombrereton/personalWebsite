@@ -9,7 +9,7 @@ const ProjectSummary = (props) => (
         <img src={props.image0} />
       </div>
       <div className="summaryTitleLink">
-        <Link to={"/project/" + props.id}><h1>{props.title}</h1></Link>
+        <Link to={"/project/" + props.id}><h3>{props.title}</h3></Link>
         <a href={props.projectLink}>Link</a>
       </div>
     </div>
