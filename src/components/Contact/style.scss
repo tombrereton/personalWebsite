@@ -1,8 +1,4 @@
-$darkestColour: #0D0C1D;
-$darkColour: #202C39;
-$lightColour:#DCDCDD;
-$altLightColour: #E9DB9E;
-$accentColour: #C05746;
+@import '../Common/style.scss';
 
 .contactContainer  {
   background: $darkColour;

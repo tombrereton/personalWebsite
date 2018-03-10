@@ -1,7 +1,4 @@
-$darkestColour: #0D0C1D;
-$darkColour: #202C39;
-$lightColour:#DCDCDD;
-$accentColour: #E9DB9E;
+@import '../Common/style.scss';
 $bounceHeight: -10px;
 
 .homeContainer h1 {
@@ -49,7 +46,7 @@ $bounceHeight: -10px;
 }
 
 .section2 {
-  color: $accentColour;
+  color: $altLightColour;
   background: $darkColour;
   padding: 1em;
 }

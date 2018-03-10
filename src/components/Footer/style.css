@@ -23,3 +23,7 @@
 .footerLink {
   color: #373737;
 }
+
+.footerLinkActive {
+  font-size: 1.5em;
+}

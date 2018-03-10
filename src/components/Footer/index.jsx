@@ -1,14 +1,18 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom'
+
+
 import './style.css';
 
 const Footer = () => (
-  <div className="footerContainer">
-    <Link to="/" className="footerLink"><i className="fas fa-home"></i></Link>
-    <Link to="/projects" className="footerLink"><i className="far fa-folder-open"></i></Link>
-    <Link to="/blog" className="footerLink"><i className="far fa-newspaper"></i></Link>
-    <Link to="/contact" className="footerLink"><i className="far fa-address-card"></i></Link>
-  </div>
+  <nav>
+    <div className="footerContainer">
+      <NavLink exact to="/" className="footerLink" activeStyle={{fontSize:'1.8em'}}><i className="fas fa-home"></i></NavLink>
+      <NavLink exact to="/projects" className="footerLink" activeStyle={{fontSize:'1.8em'}}><i className="far fa-folder-open"></i></NavLink>
+      <NavLink exact to="/blog" className="footerLink" activeStyle={{fontSize:'1.8em'}}><i className="far fa-newspaper"></i></NavLink>
+      <NavLink exact to="/contact" className="footerLink" activeStyle={{fontSize:'1.8em'}}><i className="far fa-address-card"></i></NavLink>
+    </div>
+  </nav>
 )
 
 export default Footer;
