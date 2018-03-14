@@ -1,0 +1,49 @@
+@import '../Common/style.scss';
+
+.footerContainer {
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 3em;
+  width: 100%;
+  background-color: $lightColour;
+  box-shadow: 0 0 15px #00214B;
+}
+
+.companyName {
+  margin-left: 1em;
+  color: #373737;
+}
+
+.copyWright {
+  font-style: none;
+}
+
+.footerLink {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 15%;
+  color: $darkColour;
+  text-decoration: none;
+}
+
+.linkText {
+  font-size: 0.35em;
+  display: none;
+}
+
+.selected {
+  color : $darkestColour;
+  font-size: 1.8em;
+}
+
+.selected .linkText {
+  display: inherit;
+}
+

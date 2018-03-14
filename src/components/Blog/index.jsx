@@ -30,7 +30,7 @@ class Blog extends React.Component {
   render() {
     let blogPosts = this.state.posts.map((post) => {
       return (
-        <Link to={"/post/" + post.id} className="footerLink"> <Post title={post.title} datePublished={post.date} /> </Link>
+        <Link to={"/post/" + post.id}> <Post title={post.title} datePublished={post.date} /> </Link>
       )
     });
     return (

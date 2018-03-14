@@ -1,18 +1,28 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom'
-
-
-import './style.css';
+import './style.scss';
 
 const Footer = () => (
   <nav>
     <div className="footerContainer">
-      <NavLink exact to="/" className="footerLink" activeStyle={{fontSize:'1.8em'}}><i className="fas fa-home"></i></NavLink>
-      <NavLink exact to="/projects" className="footerLink" activeStyle={{fontSize:'1.8em'}}><i className="far fa-folder-open"></i></NavLink>
-      <NavLink exact to="/blog" className="footerLink" activeStyle={{fontSize:'1.8em'}}><i className="far fa-newspaper"></i></NavLink>
-      <NavLink exact to="/contact" className="footerLink" activeStyle={{fontSize:'1.8em'}}><i className="far fa-address-card"></i></NavLink>
+      <NavLink exact to="/" className="footerLink" activeClassName="selected">
+        <i className="fas fa-home"></i>
+        <span className="linkText">home</span>
+      </NavLink>
+      <NavLink exact to="/projects" className="footerLink" activeClassName="selected">
+        <i className="far fa-folder-open"></i>
+        <span className="linkText">projects</span>
+      </NavLink>
+      <NavLink exact to="/blog" className="footerLink" activeClassName="selected" >
+        <i className="far fa-newspaper"></i>
+        <span className="linkText">blog</span>
+      </NavLink>
+      <NavLink exact to="/contact" className="footerLink" activeClassName="selected" >
+        <i className="far fa-address-card"></i>
+        <span className="linkText">contact</span>
+      </NavLink>
     </div>
-  </nav>
+  </nav >
 )
 
 export default Footer;
